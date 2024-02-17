@@ -9,7 +9,7 @@ body {
 }
 
 .primary-black {
-    color: 3A3A3A;
+    color: #3A3A3A;
 }
 
 /********************************Header styles************/
@@ -43,7 +43,7 @@ body {
 .nav ul li a {
     text-decoration: none;
     margin-right: 30px;
-    color: 3A3A3A;
+    color: #3A3A3A;
 }
 
 .header-body {
@@ -69,13 +69,16 @@ body {
 }
 
 .header-body-col-2 {
+    background-image: url("../images/Circle\ design.svg");
     padding: 50px 0px 70px 130px;
+    background-repeat: no-repeat;
+
 }
 
 .header-body-img-2 {
     position: relative;
-    bottom: 450px;
-
+    right: 120px;
+    bottom: 20px;
 }
 
 .btn-primary {
@@ -89,6 +92,10 @@ body {
     align-items: center;
     font-size: 20px;
     font-weight: 600;
+}
+
+.hide {
+    display: none;
 }
 
 /********************************************* Responsive styles **************/
@@ -105,12 +112,30 @@ body {
     }
 
     .header-body {
-        flex-direction: column;
-
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     .header-body-col-1 {
-        padding: 30px;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-discription {
+        text-align: center;
+    }
+
+    .header-body-img-2 {
+        left: -11px;
+        top: -4px;
+    }
+
+    .header-body-col-2 {
+        padding: 10px;
+        background-size: 440px 440px;
+        margin-bottom: 20px;
     }
 }
 
@@ -119,5 +144,27 @@ body {
     /******************************************* nav styles responsive **************/
     .nav-manu {
         flex-direction: column;
+    }
+
+    .header-body {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .header-body-col-1 {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-body-img-2 {
+        left: 10px;
+        top: 10px;
+    }
+
+    .header-body-col-2 {
+        padding: 0px;
+        background-size: 440px 440px;
     }
 }
